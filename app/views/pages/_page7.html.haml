@@ -11,4 +11,5 @@
     .ball.yellow
     .ball.yellow
     .ball.yellow
-  %a.ball.red{ href: (@count < 5 ? page7_path(count: @count + 1) : page8_path) }
+  - next_url = count < 5 ? pages_path(id: 7, count: count + 1) : pages_path(id: 8)
+  = link_to '', next_url, class: 'ball red', remote: false

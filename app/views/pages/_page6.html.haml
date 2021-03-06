@@ -1,0 +1,10 @@
+.center
+  - next_url = count < 5 ? pages_path(id: 6, count: count + 1) : pages_path(id: 7)
+  = link_to '', next_url, class: 'ball blue', remote: false
+  .ball-list
+    .ball.yellow
+    .ball.yellow
+    .ball.yellow
+    .ball.yellow
+    .ball.yellow
+  .ball.red
