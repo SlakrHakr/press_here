@@ -1,3 +1,2 @@
-= turbo_stream_from :page_stream
-= turbo_frame_tag :page do
+= turbo_frame_tag 'page' do
   = render partial: "page#{@current_page}", locals: { count: @count }
